@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Practicing VueJs</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="app">
+    <button type="button" class="move"  @click="move">Move to Bottom</button>
+    <div class="card" v-for="p in people" :key="p.name">
+      <h3>{{p.name}}</h3>
+      <p>{{p.message}}</p>
+      <input type="text"></input>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
+  <script src="app.js"></script>
+</body>
+
+</html>
